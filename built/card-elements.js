@@ -1509,7 +1509,7 @@ var ActionCollection = /** @class */ (function () {
                     actionButton.element.style.overflow = "table-cell";
                     //changelog: Added a case where if the button text is Show me Savings, the width grows to 100% and styles changes to 
                     //show emphasis on this particular button
-                    if (this.items[i].title === 'Show me savings') {
+                    if (this.items[i].title === 'Show me savings' || this.items[i].title.length >= 12) {
                         actionButton.element.style.width = "98%";
                         actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                     }
