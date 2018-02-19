@@ -1468,7 +1468,9 @@ var ActionCollection = /** @class */ (function () {
         }
         else {
             var buttonStrip = document.createElement("div");
-            buttonStrip.style.display = "flex";
+            //changelog: changed from flex to block, to prevent button overflowing horizontally and thus cancels
+            //all flex properties such as flex-direction and flex
+            buttonStrip.style.display = "block";
             if (hostConfig.actions.actionsOrientation == "horizontal") {
                 buttonStrip.style.flexDirection = "row";
                 switch (hostConfig.actions.actionAlignment) {
@@ -1513,6 +1515,9 @@ var ActionCollection = /** @class */ (function () {
                     if (i < this.items.length - 1 && hostConfig.actions.buttonSpacing > 0) {
                         var spacer = document.createElement("div");
                         if (hostConfig.actions.actionsOrientation == "horizontal") {
+                            //changelog: changed from display block to display none, prevents the spacer to 
+                            //create space between adjacent elements that forces the buttons to be displayed vertically
+                            spacer.style.display = "none";
                             spacer.style.flex = "0 0 auto";
                             spacer.style.width = hostConfig.actions.buttonSpacing + "px";
                         }
