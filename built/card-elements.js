@@ -1507,6 +1507,9 @@ var ActionCollection = /** @class */ (function () {
                     var actionButton = new ActionButton(this.items[i], this.actionStyle);
                     actionButton.element.style.overflow = "hidden";
                     actionButton.element.style.overflow = "table-cell";
+                    if (this.items[i].title === 'Show me savings') {
+                        actionButton.element.style.width = "100%";
+                    }
                     actionButton.element.style.flex = hostConfig.actions.actionAlignment == "stretch" ? "0 1 100%" : "0 1 auto";
                     actionButton.text = this.items[i].title;
                     actionButton.onClick = function (ab) { _this.actionClicked(ab); };
