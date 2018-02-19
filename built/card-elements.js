@@ -1510,8 +1510,8 @@ var ActionCollection = /** @class */ (function () {
                     //changelog: Added a case where if the button text is Show me Savings, the width grows to 100% and styles changes to 
                     //show emphasis on this particular button
                     if (this.items[i].title === 'Show me savings') {
-                        actionButton.element.style.width = "100%";
-                        actionButton.element.style.boxShadow = "0 8px 6px -6px black";
+                        actionButton.element.style.width = "98%";
+                        actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                     }
                     actionButton.element.style.flex = hostConfig.actions.actionAlignment == "stretch" ? "0 1 100%" : "0 1 auto";
                     actionButton.text = this.items[i].title;
