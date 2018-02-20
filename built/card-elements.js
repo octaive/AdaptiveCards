@@ -1863,6 +1863,7 @@ var Column = /** @class */ (function (_super) {
             else {
                 element.style.flex = "1 1 auto";
             }
+            element.style.flex = "none"
         }
         return element;
     };
