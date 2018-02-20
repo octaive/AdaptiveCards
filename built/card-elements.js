@@ -1931,7 +1931,8 @@ var ColumnSet = /** @class */ (function (_super) {
             element.style.overflow = "hidden";
             element.style.position = "relative";
             element.style.zIndex = "999";
-            element.style.top = "50px";
+            element.style.top = "15px";
+            //changelognew
             switch (this.horizontalAlignment) {
                 case "center":
                     element.style.justifyContent = "center";
