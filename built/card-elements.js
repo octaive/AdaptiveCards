@@ -2386,13 +2386,13 @@ var defaultHostConfig = {
     image: {
         size: "medium",
         separation: {
-            spacing: 20
+            spacing: 0
         }
     },
     imageSet: {
         imageSize: "medium",
         separation: {
-            spacing: 20
+            spacing: 0
         }
     },
     factSet: {
@@ -2423,12 +2423,12 @@ var defaultHostConfig = {
     },
     columnSet: {
         separation: {
-            spacing: 20
+            spacing: 0
         }
     },
     column: {
         separation: {
-            spacing: 20
+            spacing: 0
         }
     }
 };
