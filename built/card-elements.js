@@ -1863,6 +1863,7 @@ var Column = /** @class */ (function (_super) {
             else {
                 element.style.flex = "1 1 auto";
             }
+            //changelog: Force columns to be flex: none, to align card buttons without flex
             element.style.flex = "none"
         }
         return element;
@@ -1936,7 +1937,8 @@ var ColumnSet = /** @class */ (function (_super) {
                     element.style.justifyContent = "flex-end";
                     break;
                 default:
-                    element.style.justifyContent = "flex-start";
+                    // element.style.justifyContent = "flex-start";
+                    element.style.justifyContent = "center";
                     break;
             }
             var totalWeight = 0;
