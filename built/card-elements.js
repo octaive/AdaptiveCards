@@ -1929,6 +1929,9 @@ var ColumnSet = /** @class */ (function (_super) {
             var element = document.createElement("div");
             element.style.display = "flex";
             element.style.overflow = "hidden";
+            element.style.position = "relative";
+            element.style.zIndex = "999";
+            element.style.top = "50px";
             switch (this.horizontalAlignment) {
                 case "center":
                     element.style.justifyContent = "center";
@@ -1937,7 +1940,7 @@ var ColumnSet = /** @class */ (function (_super) {
                     element.style.justifyContent = "flex-end";
                     break;
                 default:
-                    // element.style.justifyContent = "flex-start";
+                    //changelog force default to be center to center image
                     element.style.justifyContent = "center";
                     break;
             }
@@ -2392,7 +2395,7 @@ var defaultHostConfig = {
     imageSet: {
         imageSize: "medium",
         separation: {
-            spacing: 0
+            spacing: 20
         }
     },
     factSet: {
@@ -2423,12 +2426,12 @@ var defaultHostConfig = {
     },
     columnSet: {
         separation: {
-            spacing: 0
+            spacing: 20
         }
     },
     column: {
         separation: {
-            spacing: 0
+            spacing: 20
         }
     }
 };
