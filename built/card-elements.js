@@ -456,6 +456,7 @@ var Image = /** @class */ (function (_super) {
                 element.classList.add("ac-selectable");
             }
             element.onclick = function (e) {
+                console.log(_this)
                 if (_this.selectAction) {
                     _this.selectAction.execute();
                     e.cancelBubble = true;
