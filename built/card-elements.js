@@ -1473,7 +1473,7 @@ var ActionCollection = /** @class */ (function () {
             //all flex properties such as flex-direction and flex
             buttonStrip.style.display = "block";
             buttonStrip.classList.add('ac-button-block')
-            //changelog:
+            //changelog: added a class to button stripe to control the button flow
             if (hostConfig.actions.actionsOrientation == "horizontal") {
                 buttonStrip.style.flexDirection = "row";
                 switch (hostConfig.actions.actionAlignment) {
@@ -1935,7 +1935,7 @@ var ColumnSet = /** @class */ (function (_super) {
             element.style.position = "relative";
             element.style.zIndex = "999";
             element.style.top = "15px";
-            //changelognew
+            //changelog: added positioning to div element to fix button image layout in thumbnail
             switch (this.horizontalAlignment) {
                 case "center":
                     element.style.justifyContent = "center";
