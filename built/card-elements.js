@@ -1472,6 +1472,8 @@ var ActionCollection = /** @class */ (function () {
             //changelog: changed from flex to block, to prevent button overflowing horizontally and thus cancels
             //all flex properties such as flex-direction and flex
             buttonStrip.style.display = "block";
+            buttonStrip.classList.add('ac-button-block')
+            //changelog:
             if (hostConfig.actions.actionsOrientation == "horizontal") {
                 buttonStrip.style.flexDirection = "row";
                 switch (hostConfig.actions.actionAlignment) {
