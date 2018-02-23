@@ -1519,6 +1519,7 @@ var ActionCollection = /** @class */ (function () {
                         }
                     }
                     if (this.items.length >= 6) {
+                        console.log('more than 6')
                         this.items[i].style.width = "98%";
                     }
                     actionButton.element.style.flex = hostConfig.actions.actionAlignment == "stretch" ? "0 1 100%" : "0 1 auto";
