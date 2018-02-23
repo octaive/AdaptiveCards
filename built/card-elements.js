@@ -1518,6 +1518,7 @@ var ActionCollection = /** @class */ (function () {
                             actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                         }
                     }
+                    console.log('triggered')
                     if (this.items.length >= 6) {
                         console.log('more than 6')
                         this.items[i].style.width = "98%";
