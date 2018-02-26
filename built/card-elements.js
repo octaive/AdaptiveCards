@@ -1505,7 +1505,6 @@ var ActionCollection = /** @class */ (function () {
                         break;
                 }
             }
-            console.log(this.items)
             for (var i = 0; i < maxActions; i++) {
                 if (isActionAllowed(this.items[i], forbiddenActionTypes)) {
                     var actionButton = new ActionButton(this.items[i], this.actionStyle);
@@ -1513,21 +1512,18 @@ var ActionCollection = /** @class */ (function () {
                     actionButton.element.style.overflow = "table-cell";
                     //changelog: Added a case where if the button text is Show me Savings or the text length is larger than 12 characters
                     //, the width grows to 100% and styles changes to show emphasis on this particular button
-                    console.log(this.items)
-                    if (this.items.length >= 6) {
-                        console.log('123')
-                        actionButton.element.style.width = "98%";
-                    }
-                    console.log(this.items)
-                    if (this.items[i].title.length >= 12) {
-                        actionButton.element.style.width = "98%";
-                        if (this.items[i].title === 'Show me savings') {
-                            actionButton.element.style.boxShadow = "0 6px 6px -6px black";
-                        }
-                    }
-                    if (this.items[i].title === 'Go!') {
+                    actionButton.element.style.width = "98%";
+                    if (this.items[i].title === 'Show me savings') {
                         actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                     }
+                    // console.log(this.items)
+                    // if (this.items[i].title.length >= 12) {
+                    //     actionButton.element.style.width = "98%";
+                        
+                    // }
+                    // if (this.items[i].title === 'Go!') {
+                    //     actionButton.element.style.boxShadow = "0 6px 6px -6px black";
+                    // }
                     
                     actionButton.element.style.flex = hostConfig.actions.actionAlignment == "stretch" ? "0 1 100%" : "0 1 auto";
                     actionButton.text = this.items[i].title;
