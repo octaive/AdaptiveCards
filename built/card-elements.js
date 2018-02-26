@@ -1521,9 +1521,12 @@ var ActionCollection = /** @class */ (function () {
                     console.log(this.items)
                     if (this.items[i].title.length >= 12) {
                         actionButton.element.style.width = "98%";
-                        if (this.items[i].title === 'Show me savings' || this.items[i].title === 'Go!') {
+                        if (this.items[i].title === 'Show me savings') {
                             actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                         }
+                    }
+                    if (this.items[i].title === 'Go!') {
+                        actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                     }
                     
                     actionButton.element.style.flex = hostConfig.actions.actionAlignment == "stretch" ? "0 1 100%" : "0 1 auto";
