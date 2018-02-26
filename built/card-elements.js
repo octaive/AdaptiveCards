@@ -474,25 +474,9 @@ var Image = /** @class */ (function (_super) {
                     break;
             }
             var imageElement = document.createElement("img");
-            imageElement.style.maxHeight = "100%";
-            switch (this.size) {
-                case "stretch":
-                    imageElement.style.width = "100%";
-                    break;
-                case "auto":
-                    imageElement.style.maxWidth = "100%";
-                    imageElement.style.maxHeight = "500px";
-                    break;
-                case "small":
-                    imageElement.style.maxWidth = hostConfig.imageSizes.small + "px";
-                    break;
-                case "large":
-                    imageElement.style.maxWidth = hostConfig.imageSizes.large + "px";
-                    break;
-                case "medium":
-                    imageElement.style.maxWidth = hostConfig.imageSizes.medium + "px";
-                    break;
-            }
+            imageElement.style.maxHeight = "auto";
+            imageElement.style.width = "auto";
+            //changelog changed both dimensions to auto, so the model images would display correctly.
             if (this.style == "person") {
                 imageElement.style.borderRadius = "50%";
                 imageElement.style.backgroundPosition = "50% 50%";
