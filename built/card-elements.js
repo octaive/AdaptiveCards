@@ -1504,6 +1504,12 @@ var ActionCollection = /** @class */ (function () {
                         if (this.items[i].title === 'Show me savings') {
                             actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                         }
+                        if (this.items[i].title === 'Brochures') {
+                            actionButton.element.style.width = "47.5%";
+                        }
+                        if (this.items[i].title === 'Test Drives') {
+                            actionButton.element.style.width = "47.5%";
+                        }
                     }
                     if (this.items[i].title === 'Go!') {
                         actionButton.element.style.boxShadow = "0 6px 6px -6px black";
