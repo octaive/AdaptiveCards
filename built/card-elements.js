@@ -1502,10 +1502,10 @@ var ActionCollection = /** @class */ (function () {
                             actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                         }
                     }
-                    if (this.items[i].title === 'Brochures') {
+                    if (this.items[i].title === 'Brochure') {
                         actionButton.element.style.width = "47.5%";
                     }
-                    if (this.items[i].title === 'Test Drives') {
+                    if (this.items[i].title === 'Test Drive') {
                         actionButton.element.style.width = "47.5%";
                     }
                     if (this.items[i].title === 'Go!') {
