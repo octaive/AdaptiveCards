@@ -1497,7 +1497,7 @@ var ActionCollection = /** @class */ (function () {
                     //changelog: Added a case where if the button text is Show me Savings or the text length is larger than 12 characters
                     //, the width grows to 100% and styles changes to show emphasis on this particular button
                     if (this.items[i].title.length >= 12) {
-                        actionButton.element.style.width = "98%";
+                        actionButton.element.style.width = "97.5%";
                         if (this.items[i].title === 'Show me savings') {
                             actionButton.element.style.boxShadow = "0 6px 6px -6px black";
                         }
